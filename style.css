@@ -80,3 +80,47 @@ h2 {
 p {
     margin-bottom: 20px;
 }
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-main);
+    text-transform: uppercase;
+}
+
+.element {
+    background-color: var(--accent-green);
+    color: var(--deep-blue);
+    padding: 5px 10px;
+    margin-right: -5px;
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px var(--accent-green);
+    /* Glowing effect */
+}
+
+.gate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gate-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gate-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-green);
+}
+
+.gate-card code {
+    display: block;
+    margin-top: 10px;
+    color: var(--accent-green);
+    font-family: 'Courier New', monospace;
+}
