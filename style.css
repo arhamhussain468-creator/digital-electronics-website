@@ -124,3 +124,31 @@ p {
     color: var(--accent-green);
     font-family: 'Courier New', monospace;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1e1e1e;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--accent-green);
+}
+
+th {
+    background-color: var(--deep-blue);
+    color: var(--accent-green);
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
