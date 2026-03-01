@@ -28,11 +28,17 @@ body {
 
 header {
     background-color: var(--deep-blue);
-    padding: 2rem;
+    padding: 2rem 5%;
+    /* Adds some breathing room on the sides */
     border-bottom: 2px solid var(--accent-green);
-    /* The 'signature' green line */
-    text-align: center;
+
+    /* Change these to align left */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
+
 
 header h1 {
     color: var(--accent-green);
@@ -44,9 +50,14 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: flex-start;
+    /* Aligns links to the left */
+    gap: 25px;
+    margin-top: 15px;
+    padding: 0;
+    /* Ensures no default padding pushes it right */
 }
+
 
 nav ul li {
     margin: 0 15px;
