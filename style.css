@@ -225,3 +225,39 @@ li {
     font-style: italic;
     color: var(--accent-green);
 }
+
+/*Drawing the and gate*/
+.and-shape {
+    width: 60px;
+    height: 80px;
+    background-color: transparent;
+    border: 3px solid var(--accent-green);
+    border-right: none;
+    border-radius: 0 40px 40px 0;
+    /* Creates the D-shape of an AND gate */
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Adds the input lines */
+.and-shape::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: var(--accent-green);
+    left: -20px;
+    top: 20px;
+    box-shadow: 0 35px 0 var(--accent-green);
+}
+
+/* Adds the output line */
+.and-shape::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: var(--accent-green);
+    right: -20px;
+    top: 38px;
+}
