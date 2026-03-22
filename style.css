@@ -189,3 +189,39 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+.gate-detail {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-left: 2px solid var(--accent-green);
+}
+
+.gate-symbol img {
+    max-width: 200px;
+    display: block;
+    margin: 20px 0;
+    filter: invert(1);
+    /* Use this if your gate image has a white background */
+}
+
+.boolean-box {
+    margin-top: 20px;
+}
+
+.white-bg-formula {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.formula-text {
+    font-style: italic;
+    color: var(--accent-green);
+}

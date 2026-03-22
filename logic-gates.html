@@ -1,44 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Electronics - Logic Gates</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<section id="intro-to-gates">
+    <h2>The Logic of Decisions</h2>
+    <p>Logic gates are the fundamental building blocks of digital circuits. Every complex processor, from the one in
+        your smartphone to the controller in a Smart Battery Management System, is ultimately just a massive network of
+        these simple gates. They allow us to translate mathematical Boolean logic into physical electrical actions.</p>
 
-<body>
-    <header>
-        <div class="logo">
-            <span class="element">Di</span>gital
-            <span class="element">El</span>ectronics
+    <p>The basic building blocks for digital circuits are simple devices that take one or more binary inputs and produce
+        a single binary output based on a specific logic rule.</p>
+</section>
+
+<section id="and-gate">
+    <div class="gate-detail">
+        <h3>AND Gate</h3>
+        <p>The AND gate acts as the "strict" gatekeeper of a circuit. It will only produce a HIGH output (1) if every
+            single one of its inputs is also HIGH. If even one input is LOW (0), the output stays at 0. This is commonly
+            used in safety systems where multiple conditions must be met before a machine starts.</p>
+
+        <div class="gate-symbol">
+            <img src="and-gate-symbol.png" alt="AND Gate Symbol">
+            <p class="caption">Standard Logic Symbol for AND Gate</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="logic-gates.html">Logic Gates</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="gates">
-        <h2>The Building Blocks</h2>
-        <div class="gate-grid">
-            <div class="gate-card">
-                <h3>AND Gate</h3>
-                <p>Output is high only if all inputs are high.</p>
-                <code>Y = A • B</code>
+        <div class="boolean-box">
+            <p>Boolean Expression:</p>
+            <div class="white-bg-formula">
+                Y = A • B
             </div>
-            <div class="gate-card">
-                <h3>OR Gate</h3>
-                <p>Output is high if at least one input is high.</p>
-                <code>Y = A + B</code>
-            </div>
+            <p class="formula-text">Y equals A AND B</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script src="script.js"></script>
-</body>
+<section id="or-gate">
+    <div class="gate-detail">
+        <h3>OR Gate</h3>
+        <p>The OR gate is more flexible; it produces a HIGH output if any of its inputs are HIGH. It only stays LOW if
+            all of its inputs are LOW. In practical electronics, OR gates are used in alarm systems where any one of
+            several sensors (smoke, heat, or manual) can trigger the same alarm signal.</p>
 
-</html>
+        <div class="gate-symbol">
+            <img src="or-gate-symbol.png" alt="OR Gate Symbol">
+            <p class="caption">Standard Logic Symbol for OR Gate</p>
+        </div>
+
+        <div class="boolean-box">
+            <p>Boolean Expression:</p>
+            <div class="white-bg-formula">
+                Y = A + B
+            </div>
+            <p class="formula-text">Y equals A OR B</p>
+        </div>
+    </div>
+</section>
